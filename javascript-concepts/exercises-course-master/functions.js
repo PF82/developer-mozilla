@@ -2,12 +2,12 @@
 function reusable() {
     return new Date();
 }
-console.log()
+console.log(reusable())
 
 /* --- */
 
 function reusable1() {
-    console.log();
+    console.log(new Date());
 }
 reusable1()
 
@@ -19,8 +19,8 @@ function getSize(width, height, depth) {
     var sizes = [area, volume];
     return sizes;
 }
-var areaOne = getSize()[];
-var volumeOne = getSize()[];
+var areaOne = getSize(3, 5);
+var volumeOne = getSize(3, 5, 2.7)[1];
 console.log(areaOne)
 console.log(volumeOne)
 
@@ -28,12 +28,12 @@ console.log(volumeOne)
 const magic = () => {
     return new Date();
 };
-console.log()
+console.log(magic())
 
 /* --- */
 
 const magic1 = () => {
-    console.log();
+    console.log(new Date());
 };
 magic1()
 
@@ -45,8 +45,8 @@ const getSize1 = (width, height, depth) => {
     var sizes = [area, volume];
     return sizes;
 }
-var areaOne = getSize1()[];
-var volumeOne = getSize1()[];
+var areaOne = getSize1(3,5);
+var volumeOne = getSize1(3,5,2.7)[0];
 console.log(areaOne)
 console.log(volumeOne)
 

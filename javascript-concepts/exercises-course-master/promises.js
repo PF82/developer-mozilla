@@ -10,7 +10,7 @@ const fetchData = async () => {
         const result = await response.json();
         return result;
     } catch (e) {
-        console.log();
+        console.log(e);
     }
 };
 
@@ -44,7 +44,7 @@ const makeServerRequest1 = new Promise((resolve, reject) => {
 });
 
 makeServerRequest1.then(result => {
-    console.log();
+    console.log(result);
 });
 
 //document.getElementById("demo").innerHTML = "";
@@ -72,5 +72,5 @@ const makeServerRequest2 = new Promise((resolve, reject) => {
 });
 
 makeServerRequest2.catch(error => {
-    console.log();
+    console.log(error);
 });
